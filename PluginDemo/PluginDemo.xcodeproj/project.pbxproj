@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E38E8E8914593D1F00C93831 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38E8E8814593D1F00C93831 /* Cocoa.framework */; };
+		E38E8E9314593D1F00C93831 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E38E8E9114593D1F00C93831 /* InfoPlist.strings */; };
+		E38E8E9614593D1F00C93831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8E9514593D1F00C93831 /* main.m */; };
+		E38E8E9914593D1F00C93831 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E38E8E9714593D1F00C93831 /* Credits.rtf */; };
+		E38E8E9C14593D1F00C93831 /* PluginDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8E9B14593D1F00C93831 /* PluginDemoAppDelegate.m */; };
+		E38E8E9F14593D2000C93831 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38E8E9D14593D2000C93831 /* MainMenu.xib */; };
+		E3BB1776145940F8008C3EBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38E8E8814593D1F00C93831 /* Cocoa.framework */; };
+		E3BB177C145940F8008C3EBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3BB177A145940F8008C3EBC /* InfoPlist.strings */; };
+		E3BB178314594155008C3EBC /* AbstractPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = E3BB178114594155008C3EBC /* AbstractPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3BB178414594155008C3EBC /* AbstractPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BB178214594155008C3EBC /* AbstractPlugin.m */; };
+		E3BB17861459427A008C3EBC /* PluginFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E3BB17851459427A008C3EBC /* PluginFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3BB178814594337008C3EBC /* PluginFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E3BB1775145940F8008C3EBC /* PluginFramework.framework */; };
+		E3BB178E145943D9008C3EBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38E8E8814593D1F00C93831 /* Cocoa.framework */; };
+		E3BB1794145943D9008C3EBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3BB1792145943D9008C3EBC /* InfoPlist.strings */; };
+		E3BB179D14594437008C3EBC /* PluginOne.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BB179C14594437008C3EBC /* PluginOne.m */; };
+		E3BB179F1459457C008C3EBC /* PluginOneMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BB179E1459457C008C3EBC /* PluginOneMainWindow.xib */; };
+		E3BB17A01459457C008C3EBC /* PluginOneMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BB179E1459457C008C3EBC /* PluginOneMainWindow.xib */; };
+		E3BB17A314594A14008C3EBC /* PluginFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BB1775145940F8008C3EBC /* PluginFramework.framework */; };
+		E3BB17A414594AA4008C3EBC /* PluginFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BB1775145940F8008C3EBC /* PluginFramework.framework */; };
+		E3BB17A614594C3A008C3EBC /* PluginOne.bundle in Copy Plugins */ = {isa = PBXBuildFile; fileRef = E3BB178D145943D9008C3EBC /* PluginOne.bundle */; };
+		E3BB17AE14594FFF008C3EBC /* 1_kesalin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3BB17AD14594FFF008C3EBC /* 1_kesalin.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3BB178714594321008C3EBC /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E3BB178814594337008C3EBC /* PluginFramework.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BB17A514594C27008C3EBC /* Copy Plugins */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E3BB17A614594C3A008C3EBC /* PluginOne.bundle in Copy Plugins */,
+			);
+			name = "Copy Plugins";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E38E8E8414593D1F00C93831 /* PluginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PluginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38E8E8814593D1F00C93831 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E38E8E8B14593D1F00C93831 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E38E8E8C14593D1F00C93831 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E38E8E8D14593D1F00C93831 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E38E8E9014593D1F00C93831 /* PluginDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PluginDemo-Info.plist"; sourceTree = "<group>"; };
+		E38E8E9214593D1F00C93831 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E38E8E9414593D1F00C93831 /* PluginDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PluginDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E38E8E9514593D1F00C93831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E38E8E9814593D1F00C93831 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E38E8E9A14593D1F00C93831 /* PluginDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginDemoAppDelegate.h; sourceTree = "<group>"; };
+		E38E8E9B14593D1F00C93831 /* PluginDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginDemoAppDelegate.m; sourceTree = "<group>"; };
+		E38E8E9E14593D2000C93831 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E3BB1775145940F8008C3EBC /* PluginFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PluginFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BB1779145940F8008C3EBC /* PluginFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PluginFramework-Info.plist"; sourceTree = "<group>"; };
+		E3BB177B145940F8008C3EBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E3BB177D145940F8008C3EBC /* PluginFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PluginFramework-Prefix.pch"; sourceTree = "<group>"; };
+		E3BB178114594155008C3EBC /* AbstractPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPlugin.h; sourceTree = "<group>"; };
+		E3BB178214594155008C3EBC /* AbstractPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPlugin.m; sourceTree = "<group>"; };
+		E3BB17851459427A008C3EBC /* PluginFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginFramework.h; sourceTree = "<group>"; };
+		E3BB178D145943D9008C3EBC /* PluginOne.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PluginOne.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BB1791145943D9008C3EBC /* PluginOne-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PluginOne-Info.plist"; sourceTree = "<group>"; };
+		E3BB1793145943D9008C3EBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E3BB1795145943D9008C3EBC /* PluginOne-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PluginOne-Prefix.pch"; sourceTree = "<group>"; };
+		E3BB179B14594437008C3EBC /* PluginOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginOne.h; sourceTree = "<group>"; };
+		E3BB179C14594437008C3EBC /* PluginOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginOne.m; sourceTree = "<group>"; };
+		E3BB179E1459457C008C3EBC /* PluginOneMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluginOneMainWindow.xib; sourceTree = "<group>"; };
+		E3BB17AD14594FFF008C3EBC /* 1_kesalin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1_kesalin.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E38E8E8114593D1F00C93831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38E8E8914593D1F00C93831 /* Cocoa.framework in Frameworks */,
+				E3BB17A414594AA4008C3EBC /* PluginFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BB1771145940F8008C3EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB1776145940F8008C3EBC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BB178A145943D9008C3EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB17A314594A14008C3EBC /* PluginFramework.framework in Frameworks */,
+				E3BB178E145943D9008C3EBC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E38E8E7914593D1F00C93831 = {
+			isa = PBXGroup;
+			children = (
+				E38E8E8E14593D1F00C93831 /* PluginDemo */,
+				E3BB1777145940F8008C3EBC /* PluginFramework */,
+				E3BB178F145943D9008C3EBC /* PluginOne */,
+				E38E8E8714593D1F00C93831 /* Frameworks */,
+				E38E8E8514593D1F00C93831 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E38E8E8514593D1F00C93831 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38E8E8414593D1F00C93831 /* PluginDemo.app */,
+				E3BB178D145943D9008C3EBC /* PluginOne.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E38E8E8714593D1F00C93831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3BB1775145940F8008C3EBC /* PluginFramework.framework */,
+				E38E8E8814593D1F00C93831 /* Cocoa.framework */,
+				E38E8E8A14593D1F00C93831 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E38E8E8A14593D1F00C93831 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E38E8E8B14593D1F00C93831 /* AppKit.framework */,
+				E38E8E8C14593D1F00C93831 /* CoreData.framework */,
+				E38E8E8D14593D1F00C93831 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E38E8E8E14593D1F00C93831 /* PluginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E38E8E9A14593D1F00C93831 /* PluginDemoAppDelegate.h */,
+				E38E8E9B14593D1F00C93831 /* PluginDemoAppDelegate.m */,
+				E38E8E9D14593D2000C93831 /* MainMenu.xib */,
+				E38E8E8F14593D1F00C93831 /* Supporting Files */,
+			);
+			path = PluginDemo;
+			sourceTree = "<group>";
+		};
+		E38E8E8F14593D1F00C93831 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E38E8E9014593D1F00C93831 /* PluginDemo-Info.plist */,
+				E38E8E9114593D1F00C93831 /* InfoPlist.strings */,
+				E38E8E9414593D1F00C93831 /* PluginDemo-Prefix.pch */,
+				E38E8E9514593D1F00C93831 /* main.m */,
+				E38E8E9714593D1F00C93831 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3BB1777145940F8008C3EBC /* PluginFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E3BB1778145940F8008C3EBC /* Supporting Files */,
+				E3BB178114594155008C3EBC /* AbstractPlugin.h */,
+				E3BB178214594155008C3EBC /* AbstractPlugin.m */,
+				E3BB17851459427A008C3EBC /* PluginFramework.h */,
+			);
+			path = PluginFramework;
+			sourceTree = "<group>";
+		};
+		E3BB1778145940F8008C3EBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3BB1779145940F8008C3EBC /* PluginFramework-Info.plist */,
+				E3BB177A145940F8008C3EBC /* InfoPlist.strings */,
+				E3BB177D145940F8008C3EBC /* PluginFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3BB178F145943D9008C3EBC /* PluginOne */ = {
+			isa = PBXGroup;
+			children = (
+				E3BB1790145943D9008C3EBC /* Supporting Files */,
+				E3BB179B14594437008C3EBC /* PluginOne.h */,
+				E3BB179C14594437008C3EBC /* PluginOne.m */,
+				E3BB179E1459457C008C3EBC /* PluginOneMainWindow.xib */,
+			);
+			path = PluginOne;
+			sourceTree = "<group>";
+		};
+		E3BB1790145943D9008C3EBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3BB17AD14594FFF008C3EBC /* 1_kesalin.jpg */,
+				E3BB1791145943D9008C3EBC /* PluginOne-Info.plist */,
+				E3BB1792145943D9008C3EBC /* InfoPlist.strings */,
+				E3BB1795145943D9008C3EBC /* PluginOne-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E3BB1772145940F8008C3EBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB178314594155008C3EBC /* AbstractPlugin.h in Headers */,
+				E3BB17861459427A008C3EBC /* PluginFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E38E8E8314593D1F00C93831 /* PluginDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38E8EA214593D2000C93831 /* Build configuration list for PBXNativeTarget "PluginDemo" */;
+			buildPhases = (
+				E38E8E8014593D1F00C93831 /* Sources */,
+				E38E8E8114593D1F00C93831 /* Frameworks */,
+				E38E8E8214593D1F00C93831 /* Resources */,
+				E3BB178714594321008C3EBC /* Copy Frameworks */,
+				E3BB17A514594C27008C3EBC /* Copy Plugins */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PluginDemo;
+			productName = PluginDemo;
+			productReference = E38E8E8414593D1F00C93831 /* PluginDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3BB1774145940F8008C3EBC /* PluginFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BB177E145940F8008C3EBC /* Build configuration list for PBXNativeTarget "PluginFramework" */;
+			buildPhases = (
+				E3BB1770145940F8008C3EBC /* Sources */,
+				E3BB1771145940F8008C3EBC /* Frameworks */,
+				E3BB1772145940F8008C3EBC /* Headers */,
+				E3BB1773145940F8008C3EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PluginFramework;
+			productName = PluginFramework;
+			productReference = E3BB1775145940F8008C3EBC /* PluginFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3BB178C145943D9008C3EBC /* PluginOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BB1796145943D9008C3EBC /* Build configuration list for PBXNativeTarget "PluginOne" */;
+			buildPhases = (
+				E3BB1789145943D9008C3EBC /* Sources */,
+				E3BB178A145943D9008C3EBC /* Frameworks */,
+				E3BB178B145943D9008C3EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PluginOne;
+			productName = PluginOne;
+			productReference = E3BB178D145943D9008C3EBC /* PluginOne.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E38E8E7B14593D1F00C93831 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E38E8E7E14593D1F00C93831 /* Build configuration list for PBXProject "PluginDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E38E8E7914593D1F00C93831;
+			productRefGroup = E38E8E8514593D1F00C93831 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E38E8E8314593D1F00C93831 /* PluginDemo */,
+				E3BB1774145940F8008C3EBC /* PluginFramework */,
+				E3BB178C145943D9008C3EBC /* PluginOne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E38E8E8214593D1F00C93831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38E8E9314593D1F00C93831 /* InfoPlist.strings in Resources */,
+				E38E8E9914593D1F00C93831 /* Credits.rtf in Resources */,
+				E38E8E9F14593D2000C93831 /* MainMenu.xib in Resources */,
+				E3BB179F1459457C008C3EBC /* PluginOneMainWindow.xib in Resources */,
+				E3BB17AE14594FFF008C3EBC /* 1_kesalin.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BB1773145940F8008C3EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB177C145940F8008C3EBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BB178B145943D9008C3EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB1794145943D9008C3EBC /* InfoPlist.strings in Resources */,
+				E3BB17A01459457C008C3EBC /* PluginOneMainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E38E8E8014593D1F00C93831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38E8E9614593D1F00C93831 /* main.m in Sources */,
+				E38E8E9C14593D1F00C93831 /* PluginDemoAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BB1770145940F8008C3EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB178414594155008C3EBC /* AbstractPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BB1789145943D9008C3EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB179D14594437008C3EBC /* PluginOne.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E38E8E9114593D1F00C93831 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38E8E9214593D1F00C93831 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E38E8E9714593D1F00C93831 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38E8E9814593D1F00C93831 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E38E8E9D14593D2000C93831 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38E8E9E14593D2000C93831 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E3BB177A145940F8008C3EBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BB177B145940F8008C3EBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E3BB1792145943D9008C3EBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BB1793145943D9008C3EBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E38E8EA014593D2000C93831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E38E8EA114593D2000C93831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E38E8EA314593D2000C93831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluginDemo/PluginDemo-Prefix.pch";
+				INFOPLIST_FILE = "PluginDemo/PluginDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E38E8EA414593D2000C93831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluginDemo/PluginDemo-Prefix.pch";
+				INFOPLIST_FILE = "PluginDemo/PluginDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E3BB177F145940F8008C3EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluginFramework/PluginFramework-Prefix.pch";
+				INFOPLIST_FILE = "PluginFramework/PluginFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		E3BB1780145940F8008C3EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluginFramework/PluginFramework-Prefix.pch";
+				INFOPLIST_FILE = "PluginFramework/PluginFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		E3BB1797145943D9008C3EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluginOne/PluginOne-Prefix.pch";
+				INFOPLIST_FILE = "PluginOne/PluginOne-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E3BB1798145943D9008C3EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluginOne/PluginOne-Prefix.pch";
+				INFOPLIST_FILE = "PluginOne/PluginOne-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E38E8E7E14593D1F00C93831 /* Build configuration list for PBXProject "PluginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38E8EA014593D2000C93831 /* Debug */,
+				E38E8EA114593D2000C93831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38E8EA214593D2000C93831 /* Build configuration list for PBXNativeTarget "PluginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38E8EA314593D2000C93831 /* Debug */,
+				E38E8EA414593D2000C93831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BB177E145940F8008C3EBC /* Build configuration list for PBXNativeTarget "PluginFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BB177F145940F8008C3EBC /* Debug */,
+				E3BB1780145940F8008C3EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BB1796145943D9008C3EBC /* Build configuration list for PBXNativeTarget "PluginOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BB1797145943D9008C3EBC /* Debug */,
+				E3BB1798145943D9008C3EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E38E8E7B14593D1F00C93831 /* Project object */;
+}
