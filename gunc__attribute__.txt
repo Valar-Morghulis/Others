@@ -1,0 +1,113 @@
+denotes		表示
+sentinel	哨兵
+convert		转换
+
+
+
+#if defined(__cplusplus)
+#define	__BEGIN_DECLS	extern "C" {
+#define	__END_DECLS	}
+#else
+#define	__BEGIN_DECLS
+#define	__END_DECLS
+#endif
+
+
+#define	__CONCAT(x,y)	x ## y
+#define	__STRING(x)	#x
+
+#define __dead2		__attribute__((noreturn))	//函数没有返回值。比如exit()等会导致其他函数中断而无法正常返回的情况
+#define __pure2		__attribute__((const))
+
+#define __unused	__attribute__((unused))		//函数或者变量不会用到。告诉编译器不用再警告。
+
+#define __used		__attribute__((used))		//告诉编译器就算参数或者函数没有用到，也要引用这些函数或变量
+
+#define __deprecated	__attribute__((deprecated)) //使用被废弃的方法时候，让编译器发出警告，__deprecated_msg()类似，并提供警告消息。需要打开警告开关 -Wdeprecated。__deprecated_enum_msg()作用于enum上。
+
+
+#define __unavailable	__attribute__((unavailable)) //unavailable会让在使用不可用的变量时候，让编译器发出错误警告
+
+#define __printflike(fmtarg, firstvararg) \
+		__attribute__((__format__ (__printf__, fmtarg, firstvararg))) //类似printf的参数校验
+#define __scanflike(fmtarg, firstvararg) \
+		__attribute__((__format__ (__scanf__, fmtarg, firstvararg)))  //类似scanf的参数校验
+
+
+
+__attribute__((visibility("hidden")))
+
+
+#if __has_feature(objc_arc) //是否使用arc
+
+
+
+
+/////
+
+#define CF_AVAILABLE(_mac, _ios) __attribute__((availability(ios,__NSi_##_ios)))
+#define CF_AVAILABLE_MAC(_mac) __attribute__((availability(ios,unavailable)))
+#define CF_AVAILABLE_IOS(_ios) __attribute__((availability(ios,__NSi_##_ios)))
+#define CF_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep, ...) __attribute__((availability(ios,__NSi_##_iosIntro __NSd_##_iosDep,message="" __VA_ARGS__)))
+#define CF_DEPRECATED_MAC(_macIntro, _macDep, ...) __attribute__((availability(ios,unavailable)))
+#define CF_DEPRECATED_IOS(_iosIntro, _iosDep, ...) __attribute__((availability(ios,__NSi_##_iosIntro __NSd_##_iosDep,message="" __VA_ARGS__)))
+
+
+#define CF_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
+
+#define CF_OPTIONS(_type, _name) _type _name; enum : _type
+
+#define CF_EXTENSION_UNAVAILABLE(_msg)      __OS_EXTENSION_UNAVAILABLE(_msg)
+#define CF_EXTENSION_UNAVAILABLE_MAC(_msg)  __OSX_EXTENSION_UNAVAILABLE(_msg)
+#define CF_EXTENSION_UNAVAILABLE_IOS(_msg)  __IOS_EXTENSION_UNAVAILABLE(_msg)
+
+
+
+
+///////
+
+
+#define NS_AVAILABLE(_mac, _ios) CF_AVAILABLE(_mac, _ios)
+#define NS_AVAILABLE_MAC(_mac) CF_AVAILABLE_MAC(_mac)
+#define NS_AVAILABLE_IOS(_ios) CF_AVAILABLE_IOS(_ios)
+
+#define NS_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep, ...) CF_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep, __VA_ARGS__)
+#define NS_DEPRECATED_MAC(_macIntro, _macDep, ...) CF_DEPRECATED_MAC(_macIntro, _macDep, __VA_ARGS__)
+#define NS_DEPRECATED_IOS(_iosIntro, _iosDep, ...) CF_DEPRECATED_IOS(_iosIntro, _iosDep, __VA_ARGS__)
+
+#define NS_ENUM_AVAILABLE(_mac, _ios) CF_ENUM_AVAILABLE(_mac, _ios)
+#define NS_ENUM_AVAILABLE_MAC(_mac) CF_ENUM_AVAILABLE_MAC(_mac)
+#define NS_ENUM_AVAILABLE_IOS(_ios) CF_ENUM_AVAILABLE_IOS(_ios)
+
+#define NS_ENUM_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep, ...) CF_ENUM_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep, __VA_ARGS__)
+#define NS_ENUM_DEPRECATED_MAC(_macIntro, _macDep, ...) CF_ENUM_DEPRECATED_MAC(_macIntro, _macDep, __VA_ARGS__)
+#define NS_ENUM_DEPRECATED_IOS(_iosIntro, _iosDep, ...) CF_ENUM_DEPRECATED_IOS(_iosIntro, _iosDep, __VA_ARGS__)
+
+#define NS_AVAILABLE_IPHONE(_ios) CF_AVAILABLE_IOS(_ios)
+#define NS_DEPRECATED_IPHONE(_iosIntro, _iosDep) CF_DEPRECATED_IOS(_iosIntro, _iosDep)
+
+#define NS_ENUM(_type, _name) CF_ENUM(_type, _name)
+#define NS_OPTIONS(_type, _name) CF_OPTIONS(_type, _name)
+
+#define NS_CLASS_AVAILABLE(_mac, _ios) __attribute__((visibility("default"))) NS_AVAILABLE(_mac, _ios)
+#define NS_CLASS_DEPRECATED(_mac, _macDep, _ios, _iosDep, ...) __attribute__((visibility("default"))) NS_DEPRECATED(_mac, _macDep, _ios, _iosDep, __VA_ARGS__)
+
+#define NS_CLASS_AVAILABLE_IOS(_ios) NS_CLASS_AVAILABLE(NA, _ios)
+#define NS_CLASS_AVAILABLE_MAC(_mac) NS_CLASS_AVAILABLE(_mac, NA)
+#define NS_CLASS_DEPRECATED_MAC(_macIntro, _macDep, ...) NS_CLASS_DEPRECATED(_macIntro, _macDep, NA, NA, __VA_ARGS__)
+#define NS_CLASS_DEPRECATED_IOS(_iosIntro, _iosDep, ...) NS_CLASS_DEPRECATED(NA, NA, _iosIntro, _iosDep, __VA_ARGS__)
+
+
+
+#define NS_EXTENSION_UNAVAILABLE(_msg)      __OS_EXTENSION_UNAVAILABLE(_msg)
+#define NS_EXTENSION_UNAVAILABLE_MAC(_msg)  __OSX_EXTENSION_UNAVAILABLE(_msg)
+#define NS_EXTENSION_UNAVAILABLE_IOS(_msg)  __IOS_EXTENSION_UNAVAILABLE(_msg)
+
+#define NS_ASSUME_NONNULL_BEGIN _Pragma("clang assume_nonnull begin")
+#define NS_ASSUME_NONNULL_END   _Pragma("clang assume_nonnull end")
+
+
+
+上面的参数，涉及到操作系统版本的，比如 ： NS_DEPRECATED_IOS(2_0, 5_1)
+这里面的2_0 必须符合 CFAvailability.h 文件中 对于 __NSi_2_0 等的 除去 __NSi_后的后缀。同理5_1必须符合__NSi_那些宏定义。
+

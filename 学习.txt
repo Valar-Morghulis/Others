@@ -1,0 +1,28 @@
+https://leancloud.cn/docs/sdk_down.html
+
+
+https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1033462674
+
+
+http://www.cnblogs.com/lzjsky/archive/2013/03/18/2965983.html
+
+
+
+
+typedef NS_ENUM(NSInteger, UIViewAnimationTransition) {
+    UIViewAnimationTransitionNone,
+    UIViewAnimationTransitionFlipFromLeft,
+    UIViewAnimationTransitionFlipFromRight,
+    UIViewAnimationTransitionCurlUp,
+    UIViewAnimationTransitionCurlDown,
+};
+
+typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
+    UIViewAutoresizingNone                 = 0,
+    UIViewAutoresizingFlexibleLeftMargin   = 1 << 0,
+    UIViewAutoresizingFlexibleWidth        = 1 << 1,
+    UIViewAutoresizingFlexibleRightMargin  = 1 << 2,
+    UIViewAutoresizingFlexibleTopMargin    = 1 << 3,
+    UIViewAutoresizingFlexibleHeight       = 1 << 4,
+    UIViewAutoresizingFlexibleBottomMargin = 1 << 5
+};
