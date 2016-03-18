@@ -1,0 +1,30 @@
+{
+  "name": "MYProgressHUD",
+  "version": "0.0.1",
+  "summary": "A short description of MYProgressHUD.",
+  "description": "A short description of MYProgressHUD.",
+  "homepage": "https://github.com/Valar-Morghulis/MYProgressHUD",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/MYProgressHUD.git"
+  },
+  "source_files": "MYProgressHUD/*.{h,m}",
+  "public_header_files": "MYProgressHUD/*.h",
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "dependencies": {
+    "MBProgressHUD": [
+
+    ]
+  },
+  "requires_arc": false
+}

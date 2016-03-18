@@ -1,0 +1,21 @@
+{
+  "name": "CTDevice",
+  "version": "0.0.1",
+  "summary": "A short description of CTDevice.",
+  "description": "A short description of CTDevice.",
+  "homepage": "https://github.com/Valar-Morghulis/CTDevice",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/CTDevice.git"
+  },
+  "source_files": "CTDevice/*.{h,m}",
+  "public_header_files": "CTDevice/*.h",
+  "requires_arc": false
+}

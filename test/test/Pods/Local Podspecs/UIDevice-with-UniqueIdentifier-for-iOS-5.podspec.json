@@ -1,0 +1,21 @@
+{
+  "name": "UIDevice-with-UniqueIdentifier-for-iOS-5",
+  "version": "0.0.1",
+  "summary": "A short description of UIDevice-with-UniqueIdentifier-for-iOS-5.",
+  "description": "A short description of UIDevice-with-UniqueIdentifier-for-iOS-5.",
+  "homepage": "https://github.com/gekitz/UIDevice-with-UniqueIdentifier-for-iOS-5",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "gekitz",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/gekitz/UIDevice-with-UniqueIdentifier-for-iOS-5.git"
+  },
+  "source_files": "Classes/*.{h,m}",
+  "public_header_files": "Classes/*.h",
+  "requires_arc": false
+}

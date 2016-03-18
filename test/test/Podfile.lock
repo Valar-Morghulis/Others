@@ -1,0 +1,134 @@
+PODS:
+  - CheckAndRunApplication (0.0.1)
+  - CTAlertView (0.0.1)
+  - CTDevice (0.0.1)
+  - CTDottedSplitLine (0.0.1)
+  - CTUtility (0.0.1):
+    - CTAlertView
+    - SimpleKeychain (~> 0.4.0)
+    - UIDevice-with-UniqueIdentifier-for-iOS-5
+  - CTWebService (0.0.1)
+  - Localisator (0.0.1)
+  - Mantle (2.0.6):
+    - Mantle/extobjc (= 2.0.6)
+  - Mantle/extobjc (2.0.6)
+  - MBProgressHUD (0.9.2)
+  - MYProgressHUD (0.0.1):
+    - MBProgressHUD
+  - NSString-HexColor (0.0.1)
+  - PWebImageView (0.0.1):
+    - SDWebImage
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SimpleKeychain (0.4.0)
+  - Task (1.1)
+  - UIDevice-with-UniqueIdentifier-for-iOS-5 (0.0.1)
+  - UIImage-Tools (0.0.1)
+  - yajl (1.0.12)
+  - yajl-objc (0.2.27):
+    - yajl (~> 1.0.11)
+
+DEPENDENCIES:
+  - CheckAndRunApplication (from `https://raw.githubusercontent.com/Valar-Morghulis/CheckAndRunApplication/master/CheckAndRunApplication.podspec`)
+  - CTAlertView (from `https://raw.githubusercontent.com/Valar-Morghulis/CTAlertView/master/CTAlertView.podspec`)
+  - CTDevice (from `https://raw.githubusercontent.com/Valar-Morghulis/CTDevice/master/CTDevice.podspec`)
+  - CTDottedSplitLine (from `https://raw.githubusercontent.com/Valar-Morghulis/CTDottedSplitLine/master/CTDottedSplitLine.podspec`)
+  - CTUtility (from `https://raw.githubusercontent.com/Valar-Morghulis/CTUtility/master/CTUtility.podspec`)
+  - CTWebService (from `https://raw.githubusercontent.com/Valar-Morghulis/CTWebService/master/CTWebService.podspec`)
+  - Localisator (from `https://raw.githubusercontent.com/Valar-Morghulis/Localisator/master/Localisator.podspec`)
+  - Mantle (~> 2.0.2)
+  - MYProgressHUD (from `https://raw.githubusercontent.com/Valar-Morghulis/MYProgressHUD/master/MYProgressHUD.podspec`)
+  - NSString-HexColor (from `https://raw.githubusercontent.com/Valar-Morghulis/NSString-HexColor/master/NSString-HexColor.podspec`)
+  - PWebImageView (from `https://raw.githubusercontent.com/Valar-Morghulis/PWebImageView/master/PWebImageView.podspec`)
+  - Task (~> 1.1)
+  - UIDevice-with-UniqueIdentifier-for-iOS-5 (from `https://raw.githubusercontent.com/Valar-Morghulis/UIDevice-with-UniqueIdentifier-for-iOS-5/master/UIDevice-with-UniqueIdentifier-for-iOS-5.podspec`)
+  - UIImage-Tools (from `https://raw.githubusercontent.com/Valar-Morghulis/UIImage-Tools/master/UIImage-Tools.podspec`)
+  - yajl-objc (~> 0.2.27)
+
+EXTERNAL SOURCES:
+  CheckAndRunApplication:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/CheckAndRunApplication/master/CheckAndRunApplication.podspec
+  CTAlertView:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/CTAlertView/master/CTAlertView.podspec
+  CTDevice:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/CTDevice/master/CTDevice.podspec
+  CTDottedSplitLine:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/CTDottedSplitLine/master/CTDottedSplitLine.podspec
+  CTUtility:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/CTUtility/master/CTUtility.podspec
+  CTWebService:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/CTWebService/master/CTWebService.podspec
+  Localisator:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/Localisator/master/Localisator.podspec
+  MYProgressHUD:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/MYProgressHUD/master/MYProgressHUD.podspec
+  NSString-HexColor:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/NSString-HexColor/master/NSString-HexColor.podspec
+  PWebImageView:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/PWebImageView/master/PWebImageView.podspec
+  UIDevice-with-UniqueIdentifier-for-iOS-5:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/UIDevice-with-UniqueIdentifier-for-iOS-5/master/UIDevice-with-UniqueIdentifier-for-iOS-5.podspec
+  UIImage-Tools:
+    :podspec: https://raw.githubusercontent.com/Valar-Morghulis/UIImage-Tools/master/UIImage-Tools.podspec
+
+CHECKOUT OPTIONS:
+  CheckAndRunApplication:
+    :commit: fa9d2ba4ab0692776cae1640a90fb2f406549f1c
+    :git: https://github.com/Valar-Morghulis/CheckAndRunApplication.git
+  CTAlertView:
+    :commit: 8c12abaf17f28fc3bc0afedd16516bd2b5035055
+    :git: https://github.com/Valar-Morghulis/CTAlertView.git
+  CTDevice:
+    :commit: a66f21f8bae77de2c481d77d39839aa7a98ce368
+    :git: https://github.com/Valar-Morghulis/CTDevice.git
+  CTDottedSplitLine:
+    :commit: 455d7bf04bdc48fe6517df1e24e8d0b26e191e27
+    :git: https://github.com/Valar-Morghulis/CTDottedSplitLine.git
+  CTUtility:
+    :commit: bb8e2d66ad7a276d5c0741bd9463f5596442ce2f
+    :git: https://github.com/Valar-Morghulis/CTUtility.git
+  CTWebService:
+    :commit: 27c9d5b04200d8544ac76cc80b4e72e5fac6cbcd
+    :git: https://github.com/Valar-Morghulis/CTWebService.git
+  Localisator:
+    :commit: 8cd5dccb62a612f24e42280c1756f9a70712b768
+    :git: https://github.com/Valar-Morghulis/Localisator.git
+  MYProgressHUD:
+    :commit: 5f04ad95bd90271f300c8ace2755000430b3519a
+    :git: https://github.com/Valar-Morghulis/MYProgressHUD.git
+  NSString-HexColor:
+    :commit: 40654523e27400bcf6d709c21e5a94b836c60bb9
+    :git: https://github.com/Valar-Morghulis/NSString-HexColor.git
+  PWebImageView:
+    :commit: 5ba8de2e695436a62914ac93e075d1a8b2850cab
+    :git: https://github.com/Valar-Morghulis/PWebImageView.git
+  UIDevice-with-UniqueIdentifier-for-iOS-5:
+    :commit: 0afaed6f5b0132b1c312c56177e2ada724cd088d
+    :git: https://github.com/gekitz/UIDevice-with-UniqueIdentifier-for-iOS-5.git
+  UIImage-Tools:
+    :commit: 7fa1a9d50284eb273eeeb972dbe7ece81812b96c
+    :git: https://github.com/Valar-Morghulis/UIImage-Tools.git
+
+SPEC CHECKSUMS:
+  CheckAndRunApplication: 2162243143505807f2390905e9432e5a8ffe8f0f
+  CTAlertView: 41d009b4c75d06843c9fbde9e27d00ffc4ad8d13
+  CTDevice: 07094192dddef46603c1a10bdc4c1355d0794703
+  CTDottedSplitLine: 19706d933d6cfc97ea7ad1d6e7c547d3d0d90753
+  CTUtility: 146d916ea8bfbdd18887acc142448b7903b4b0bb
+  CTWebService: f5704c7e347c3f0d9e053343f602ff5c6226943e
+  Localisator: d47eaf63f1164c712b06b89bbed76f92dc6893c6
+  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MYProgressHUD: 90cfa88c14cba95391a43b3c3bbd96c7cf632693
+  NSString-HexColor: 46583b290dfeb20bd41471c1baa244b1758b83ef
+  PWebImageView: f3daa604618ddd248ed2ac1590603fe488fc5d6f
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SimpleKeychain: ed7fcbc2a235ad6919a3d2385ed4b44ab866d874
+  Task: c6fda98296922b70de403864a297204a2787243d
+  UIDevice-with-UniqueIdentifier-for-iOS-5: df4098ddbf593bb6b746236314a97d803e91998e
+  UIImage-Tools: 18919e742f51b317e1e084a4e54f3c929b683dd9
+  yajl: e435f86f7429fe047dff3314608fb775defd8e09
+  yajl-objc: a235ad1b1a298dfa76df46809e6477435eccc745
+
+COCOAPODS: 0.39.0

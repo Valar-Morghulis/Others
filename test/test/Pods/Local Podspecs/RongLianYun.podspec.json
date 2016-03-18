@@ -1,0 +1,47 @@
+{
+  "name": "RongLianYun",
+  "version": "0.0.1",
+  "summary": "A short description of RongLianYun.",
+  "description": "Except as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
+  "homepage": "https://github.com/Valar-Morghulis/RongLianYun",
+  "license": {
+    "type": "MIT",
+    "text": "Copyright 2013 Medium Entertainment, Inc.\n                           Licensed under the Apache License, Version 2.0 (the \"License\");\n                           you may not use this file except in compliance with the License.\n                           You may obtain a copy of the License at\n                           http://www.apache.org/licenses/LICENSE-2.0\n                           Unless required by applicable law or agreed to in writing, software\n                           distributed under the License is distributed on an \"AS IS\" BASIS,\n                           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n                           See the License for the specific language governing permissions and\n                           limitations under the License."
+  },
+  "authors": {
+    "Valar-Morghulis": "Valar-Morghulis@haxx.se"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/RongLianYun.git"
+  },
+  "source_files": [
+    "Yuntx_FullLib_SDK/*.h",
+    "Yuntx_FullLib_SDK/**/*.{h,m}"
+  ],
+  "vendored_libraries": "Yuntx_FullLib_SDK/Yuntx_FullLib_SDK_v5.1.8r.a",
+  "public_header_files": [
+    "Yuntx_FullLib_SDK/*.h",
+    "Yuntx_FullLib_SDK/**/*.{h,m}"
+  ],
+  "resources": "Yuntx_FullLib_SDK/CCPSDKBundle.bundle",
+  "frameworks": [
+    "Foundation",
+    "UIKit",
+    "CoreTelephony",
+    "MediaPlayer",
+    "CFNetwork",
+    "SystemConfiguration",
+    "MobileCoreServices",
+    "AudioToolbox",
+    "CoreGraphics",
+    "AVFoundation"
+  ],
+  "libraries": [
+    "icucore",
+    "sqlite3",
+    "z"
+  ]
+}

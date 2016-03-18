@@ -1,0 +1,21 @@
+{
+  "name": "CTWebService",
+  "version": "0.0.1",
+  "summary": "A short description of CTWebService.",
+  "description": "A short description of CTWebService.",
+  "homepage": "https://github.com/Valar-Morghulis/CTWebService",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/CTWebService.git"
+  },
+  "source_files": "CTWebService/*.{h,m}",
+  "public_header_files": "CTWebService/*.h",
+  "requires_arc": false
+}

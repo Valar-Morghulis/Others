@@ -1,0 +1,21 @@
+{
+  "name": "NSString-HexColor",
+  "version": "0.0.1",
+  "summary": "A short description of NSString-HexColor.",
+  "description": "A short description of NSString-HexColor.",
+  "homepage": "https://github.com/Valar-Morghulis/NSString-HexColor",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/NSString-HexColor.git"
+  },
+  "source_files": "NSString-HexColor/*.{h,m}",
+  "public_header_files": "NSString-HexColor/*.h",
+  "requires_arc": false
+}

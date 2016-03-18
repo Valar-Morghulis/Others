@@ -1,0 +1,34 @@
+platform :ios,'7.0'
+
+
+pod 'Mantle', '~> 2.0.2'
+ pod 'Task', '~> 1.1'
+
+pod 'MYProgressHUD',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/MYProgressHUD/master/MYProgressHUD.podspec'
+
+pod 'Localisator',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/Localisator/master/Localisator.podspec'
+
+pod 'PWebImageView',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/PWebImageView/master/PWebImageView.podspec'
+
+pod 'NSString-HexColor',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/NSString-HexColor/master/NSString-HexColor.podspec'
+
+pod 'CTDottedSplitLine',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/CTDottedSplitLine/master/CTDottedSplitLine.podspec'
+
+pod 'UIImage-Tools',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/UIImage-Tools/master/UIImage-Tools.podspec'
+
+pod 'CTWebService',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/CTWebService/master/CTWebService.podspec'
+
+pod 'UIDevice-with-UniqueIdentifier-for-iOS-5',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/UIDevice-with-UniqueIdentifier-for-iOS-5/master/UIDevice-with-UniqueIdentifier-for-iOS-5.podspec'
+
+pod 'CTDevice',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/CTDevice/master/CTDevice.podspec'
+
+pod 'CTAlertView',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/CTAlertView/master/CTAlertView.podspec'
+
+pod 'CheckAndRunApplication',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/CheckAndRunApplication/master/CheckAndRunApplication.podspec'
+
+
+
+pod 'yajl-objc', '~> 0.2.27'
+
+pod 'CTUtility',:podspec => 'https://raw.githubusercontent.com/Valar-Morghulis/CTUtility/master/CTUtility.podspec'
+

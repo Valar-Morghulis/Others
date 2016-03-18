@@ -1,0 +1,22 @@
+{
+  "name": "CTAlertView",
+  "version": "0.0.1",
+  "summary": "A short description of CTAlertView.",
+  "description": "A short description of CTAlertView.",
+  "homepage": "https://github.com/Valar-Morghulis/CTAlertView",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/CTAlertView.git"
+  },
+  "source_files": "CTAlertView/*.{h,m}",
+  "public_header_files": "CTAlertView/*.h",
+  "resources": "CTAlertView/CTAlertView.Bundle",
+  "requires_arc": false
+}
