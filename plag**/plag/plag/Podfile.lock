@@ -1,0 +1,116 @@
+PODS:
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - BaiduMapAPI (2.7.0)
+  - cJSON (0.0.1)
+  - cUPYun (0.0.1)
+  - DES (0.0.1)
+  - GTM (0.0.1)
+  - iOScURL (0.0.1)
+  - iOSWeChatSdk (1.5.0)
+  - MBProgressHUD (0.9.1)
+  - MLNavigationController (0.0.1)
+  - Reachability (3.0.0)
+  - RegexKitLite (4.0)
+  - sqlite3 (3.8.10.2):
+    - sqlite3/common (= 3.8.10.2)
+  - sqlite3/common (3.8.10.2)
+  - UIView-Image (0.0.1)
+  - yajl (1.0.12)
+  - yajl-objc (0.2.27):
+    - yajl (~> 1.0.11)
+  - ZCAddressBook (0.0.1)
+
+DEPENDENCIES:
+  - ASIHTTPRequest (~> 1.8.2)
+  - BaiduMapAPI (~> 2.7.0)
+  - cJSON (from `~/Desktop/PodSpecs/PodSpecs/cJSON.podspec`)
+  - cUPYun (from `~/Desktop/PodSpecs/PodSpecs/cUPYun.podspec`)
+  - DES (from `~/Desktop/PodSpecs/PodSpecs/DES.podspec`)
+  - GTM (from `~/Desktop/PodSpecs/PodSpecs/GTM.podspec`)
+  - iOScURL (from `~/Desktop/PodSpecs/PodSpecs/iOScURL.podspec`)
+  - iOSWeChatSdk (~> 1.5.0)
+  - MBProgressHUD (~> 0.9.1)
+  - MLNavigationController (from `~/Desktop/PodSpecs/PodSpecs/MLNavigationController.podspec`)
+  - Reachability (~> 3.0.0)
+  - RegexKitLite (~> 4.0)
+  - sqlite3 (~> 3.8.10.2)
+  - UIView-Image (from `~/Desktop/PodSpecs/PodSpecs/UIView-Image.podspec`)
+  - yajl-objc (~> 0.2.27)
+  - ZCAddressBook (from `~/Desktop/PodSpecs/PodSpecs/ZCAddressBook.podspec`)
+
+EXTERNAL SOURCES:
+  cJSON:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/cJSON.podspec
+  cUPYun:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/cUPYun.podspec
+  DES:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/DES.podspec
+  GTM:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/GTM.podspec
+  iOScURL:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/iOScURL.podspec
+  MLNavigationController:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/MLNavigationController.podspec
+  UIView-Image:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/UIView-Image.podspec
+  ZCAddressBook:
+    :podspec: ~/Desktop/PodSpecs/PodSpecs/ZCAddressBook.podspec
+
+CHECKOUT OPTIONS:
+  cJSON:
+    :commit: 27879f8c005cbc235cb0f4e8663c7dcfd17e23ec
+    :git: https://github.com/kbranigan/cJSON.git
+  cUPYun:
+    :commit: f7e1a66b6223b07abbf5f40181747cfae44bed20
+    :git: https://github.com/Valar-Morghulis/cUPYun.git
+  DES:
+    :commit: 8e8c464b75eeed682f51dad359a3d476867a5825
+    :git: https://github.com/Valar-Morghulis/DES.git
+  GTM:
+    :commit: 877f8e21518115905a70e9de9897ff28ed7c7778
+    :git: https://github.com/Valar-Morghulis/GTM.git
+  iOScURL:
+    :commit: d78142f987a13fd70bf73f9bf273389245849d48
+    :git: https://github.com/pauluhn/iOScURL.git
+  MLNavigationController:
+    :commit: c0f021d1aa45c63b3c8bd995523f3e4bb74799f3
+    :git: https://github.com/Valar-Morghulis/MLNavigationController.git
+  UIView-Image:
+    :commit: 576437227961c608356e17276f240584ea236010
+    :git: https://github.com/Valar-Morghulis/UIView-Image.git
+  ZCAddressBook:
+    :commit: 17e5300bc77eb9793e1e20928507725ca1b02849
+    :git: https://github.com/Valar-Morghulis/ZCAddressBook.git
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  BaiduMapAPI: d6433624b0b4dd156f2d842f394a5011b02a6401
+  cJSON: d939ec2d3f44ac51f1a747d7c281ffb3bebb4766
+  cUPYun: 247e5b5f4f37ce6b26248d52bcefc6ccc35952ca
+  DES: d6b74210fd25b8cc70ee0316522dbd437e6b8743
+  GTM: e14406a22bdd9ab6f958e8dfa0159cf4ef49e511
+  iOScURL: fdb62776bc74198ef2eac2cee74dd4b81b0e8e51
+  iOSWeChatSdk: 62be91f0231b1e0f003419b6816d83d8ff0f3e91
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MLNavigationController: 36de0d0e022a8672535e343cb4a51851ba094070
+  Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  sqlite3: 5e6797834b321b0926250b89315b8516ce1c58f6
+  UIView-Image: cf973103ed00732c511a2230f54ebf24ad0eefe2
+  yajl: e435f86f7429fe047dff3314608fb775defd8e09
+  yajl-objc: a235ad1b1a298dfa76df46809e6477435eccc745
+  ZCAddressBook: 49c9b2b8dbcf736c311a0849e739600d41ac900e
+
+COCOAPODS: 0.37.2

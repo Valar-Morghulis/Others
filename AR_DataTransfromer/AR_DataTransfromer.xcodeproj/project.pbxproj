@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B61A52D418BD8A070065A43A /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52B318BD8A070065A43A /* sqlite3.c */; };
+		B61A52D518BD8A070065A43A /* yajl.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52BC18BD8A070065A43A /* yajl.c */; };
+		B61A52D618BD8A070065A43A /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52BD18BD8A070065A43A /* yajl_alloc.c */; };
+		B61A52D718BD8A070065A43A /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52BF18BD8A070065A43A /* yajl_buf.c */; };
+		B61A52D818BD8A070065A43A /* yajl_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52C218BD8A070065A43A /* yajl_encode.c */; };
+		B61A52D918BD8A070065A43A /* yajl_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52C418BD8A070065A43A /* yajl_gen.c */; };
+		B61A52DA18BD8A070065A43A /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52C518BD8A070065A43A /* yajl_lex.c */; };
+		B61A52DB18BD8A070065A43A /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = B61A52C718BD8A070065A43A /* yajl_parser.c */; };
+		B61A52DC18BD8A070065A43A /* NSObject+YAJL.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A52CB18BD8A070065A43A /* NSObject+YAJL.m */; };
+		B61A52DD18BD8A070065A43A /* YAJL_GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A52CD18BD8A070065A43A /* YAJL_GTMBase64.m */; };
+		B61A52DE18BD8A070065A43A /* YAJLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A52CF18BD8A070065A43A /* YAJLDocument.m */; };
+		B61A52DF18BD8A070065A43A /* YAJLGen.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A52D118BD8A070065A43A /* YAJLGen.m */; };
+		B61A52E018BD8A070065A43A /* YAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A52D318BD8A070065A43A /* YAJLParser.m */; };
+		B61A52E418BD8A980065A43A /* ARTransferDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A52E318BD8A980065A43A /* ARTransferDAO.m */; };
+		B61A52E718BD8B480065A43A /* ARData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61A52E618BD8B480065A43A /* ARData.m */; };
+		B61A52E918BD9CDB0065A43A /* IndoorMap_Building.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B61A52E818BD9CDB0065A43A /* IndoorMap_Building.sqlite */; };
+		B6D18EEC18BD897F0068DFD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D18EEB18BD897F0068DFD8 /* UIKit.framework */; };
+		B6D18EEE18BD897F0068DFD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D18EED18BD897F0068DFD8 /* Foundation.framework */; };
+		B6D18EF018BD897F0068DFD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D18EEF18BD897F0068DFD8 /* CoreGraphics.framework */; };
+		B6D18EF218BD897F0068DFD8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D18EF118BD897F0068DFD8 /* CoreData.framework */; };
+		B6D18EF818BD897F0068DFD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6D18EF618BD897F0068DFD8 /* InfoPlist.strings */; };
+		B6D18EFA18BD897F0068DFD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D18EF918BD897F0068DFD8 /* main.m */; };
+		B6D18EFE18BD897F0068DFD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D18EFD18BD897F0068DFD8 /* AppDelegate.m */; };
+		B6D18F0018BD897F0068DFD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D18EFF18BD897F0068DFD8 /* Default.png */; };
+		B6D18F0218BD897F0068DFD8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D18F0118BD897F0068DFD8 /* Default@2x.png */; };
+		B6D18F0418BD897F0068DFD8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D18F0318BD897F0068DFD8 /* Default-568h@2x.png */; };
+		B6D18F0718BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6D18F0518BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B61A52B318BD8A070065A43A /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		B61A52B418BD8A070065A43A /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		B61A52B618BD8A070065A43A /* YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJL.h; sourceTree = "<group>"; };
+		B61A52B918BD8A070065A43A /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		B61A52BA18BD8A070065A43A /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		B61A52BB18BD8A070065A43A /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		B61A52BC18BD8A070065A43A /* yajl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl.c; sourceTree = "<group>"; };
+		B61A52BD18BD8A070065A43A /* yajl_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_alloc.c; sourceTree = "<group>"; };
+		B61A52BE18BD8A070065A43A /* yajl_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_alloc.h; sourceTree = "<group>"; };
+		B61A52BF18BD8A070065A43A /* yajl_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_buf.c; sourceTree = "<group>"; };
+		B61A52C018BD8A070065A43A /* yajl_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_buf.h; sourceTree = "<group>"; };
+		B61A52C118BD8A070065A43A /* yajl_bytestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_bytestack.h; sourceTree = "<group>"; };
+		B61A52C218BD8A070065A43A /* yajl_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_encode.c; sourceTree = "<group>"; };
+		B61A52C318BD8A070065A43A /* yajl_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_encode.h; sourceTree = "<group>"; };
+		B61A52C418BD8A070065A43A /* yajl_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_gen.c; sourceTree = "<group>"; };
+		B61A52C518BD8A070065A43A /* yajl_lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_lex.c; sourceTree = "<group>"; };
+		B61A52C618BD8A070065A43A /* yajl_lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_lex.h; sourceTree = "<group>"; };
+		B61A52C718BD8A070065A43A /* yajl_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_parser.c; sourceTree = "<group>"; };
+		B61A52C818BD8A070065A43A /* yajl_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parser.h; sourceTree = "<group>"; };
+		B61A52CA18BD8A070065A43A /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YAJL.h"; sourceTree = "<group>"; };
+		B61A52CB18BD8A070065A43A /* NSObject+YAJL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YAJL.m"; sourceTree = "<group>"; };
+		B61A52CC18BD8A070065A43A /* YAJL_GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJL_GTMBase64.h; sourceTree = "<group>"; };
+		B61A52CD18BD8A070065A43A /* YAJL_GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJL_GTMBase64.m; sourceTree = "<group>"; };
+		B61A52CE18BD8A070065A43A /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLDocument.h; sourceTree = "<group>"; };
+		B61A52CF18BD8A070065A43A /* YAJLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLDocument.m; sourceTree = "<group>"; };
+		B61A52D018BD8A070065A43A /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLGen.h; sourceTree = "<group>"; };
+		B61A52D118BD8A070065A43A /* YAJLGen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLGen.m; sourceTree = "<group>"; };
+		B61A52D218BD8A070065A43A /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLParser.h; sourceTree = "<group>"; };
+		B61A52D318BD8A070065A43A /* YAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLParser.m; sourceTree = "<group>"; };
+		B61A52E218BD8A980065A43A /* ARTransferDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTransferDAO.h; sourceTree = "<group>"; };
+		B61A52E318BD8A980065A43A /* ARTransferDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTransferDAO.m; sourceTree = "<group>"; };
+		B61A52E518BD8B480065A43A /* ARData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARData.h; sourceTree = "<group>"; };
+		B61A52E618BD8B480065A43A /* ARData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARData.m; sourceTree = "<group>"; };
+		B61A52E818BD9CDB0065A43A /* IndoorMap_Building.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndoorMap_Building.sqlite; sourceTree = "<group>"; };
+		B6D18EE718BD897F0068DFD8 /* AR_DataTransfromer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AR_DataTransfromer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D18EEB18BD897F0068DFD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6D18EED18BD897F0068DFD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6D18EEF18BD897F0068DFD8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6D18EF118BD897F0068DFD8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6D18EF518BD897F0068DFD8 /* AR_DataTransfromer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AR_DataTransfromer-Info.plist"; sourceTree = "<group>"; };
+		B6D18EF718BD897F0068DFD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6D18EF918BD897F0068DFD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6D18EFB18BD897F0068DFD8 /* AR_DataTransfromer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AR_DataTransfromer-Prefix.pch"; sourceTree = "<group>"; };
+		B6D18EFC18BD897F0068DFD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6D18EFD18BD897F0068DFD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6D18EFF18BD897F0068DFD8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B6D18F0118BD897F0068DFD8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B6D18F0318BD897F0068DFD8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B6D18F0618BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AR_DataTransfromer.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D18EE418BD897F0068DFD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D18EEC18BD897F0068DFD8 /* UIKit.framework in Frameworks */,
+				B6D18EEE18BD897F0068DFD8 /* Foundation.framework in Frameworks */,
+				B6D18EF018BD897F0068DFD8 /* CoreGraphics.framework in Frameworks */,
+				B6D18EF218BD897F0068DFD8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B61A52B118BD8A070065A43A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B61A52B218BD8A070065A43A /* sqlite3 */,
+				B61A52B518BD8A070065A43A /* YAJL */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B61A52B218BD8A070065A43A /* sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				B61A52B318BD8A070065A43A /* sqlite3.c */,
+				B61A52B418BD8A070065A43A /* sqlite3.h */,
+			);
+			path = sqlite3;
+			sourceTree = "<group>";
+		};
+		B61A52B518BD8A070065A43A /* YAJL */ = {
+			isa = PBXGroup;
+			children = (
+				B61A52B618BD8A070065A43A /* YAJL.h */,
+				B61A52B718BD8A070065A43A /* YAJL_C */,
+				B61A52C918BD8A070065A43A /* YAJL_OBC */,
+			);
+			path = YAJL;
+			sourceTree = "<group>";
+		};
+		B61A52B718BD8A070065A43A /* YAJL_C */ = {
+			isa = PBXGroup;
+			children = (
+				B61A52B818BD8A070065A43A /* api */,
+				B61A52BC18BD8A070065A43A /* yajl.c */,
+				B61A52BD18BD8A070065A43A /* yajl_alloc.c */,
+				B61A52BE18BD8A070065A43A /* yajl_alloc.h */,
+				B61A52BF18BD8A070065A43A /* yajl_buf.c */,
+				B61A52C018BD8A070065A43A /* yajl_buf.h */,
+				B61A52C118BD8A070065A43A /* yajl_bytestack.h */,
+				B61A52C218BD8A070065A43A /* yajl_encode.c */,
+				B61A52C318BD8A070065A43A /* yajl_encode.h */,
+				B61A52C418BD8A070065A43A /* yajl_gen.c */,
+				B61A52C518BD8A070065A43A /* yajl_lex.c */,
+				B61A52C618BD8A070065A43A /* yajl_lex.h */,
+				B61A52C718BD8A070065A43A /* yajl_parser.c */,
+				B61A52C818BD8A070065A43A /* yajl_parser.h */,
+			);
+			path = YAJL_C;
+			sourceTree = "<group>";
+		};
+		B61A52B818BD8A070065A43A /* api */ = {
+			isa = PBXGroup;
+			children = (
+				B61A52B918BD8A070065A43A /* yajl_common.h */,
+				B61A52BA18BD8A070065A43A /* yajl_gen.h */,
+				B61A52BB18BD8A070065A43A /* yajl_parse.h */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		B61A52C918BD8A070065A43A /* YAJL_OBC */ = {
+			isa = PBXGroup;
+			children = (
+				B61A52CA18BD8A070065A43A /* NSObject+YAJL.h */,
+				B61A52CB18BD8A070065A43A /* NSObject+YAJL.m */,
+				B61A52CC18BD8A070065A43A /* YAJL_GTMBase64.h */,
+				B61A52CD18BD8A070065A43A /* YAJL_GTMBase64.m */,
+				B61A52CE18BD8A070065A43A /* YAJLDocument.h */,
+				B61A52CF18BD8A070065A43A /* YAJLDocument.m */,
+				B61A52D018BD8A070065A43A /* YAJLGen.h */,
+				B61A52D118BD8A070065A43A /* YAJLGen.m */,
+				B61A52D218BD8A070065A43A /* YAJLParser.h */,
+				B61A52D318BD8A070065A43A /* YAJLParser.m */,
+			);
+			path = YAJL_OBC;
+			sourceTree = "<group>";
+		};
+		B6D18EDC18BD897F0068DFD8 = {
+			isa = PBXGroup;
+			children = (
+				B61A52E818BD9CDB0065A43A /* IndoorMap_Building.sqlite */,
+				B61A52E518BD8B480065A43A /* ARData.h */,
+				B61A52E618BD8B480065A43A /* ARData.m */,
+				B61A52E218BD8A980065A43A /* ARTransferDAO.h */,
+				B61A52E318BD8A980065A43A /* ARTransferDAO.m */,
+				B61A52B118BD8A070065A43A /* lib */,
+				B6D18EF318BD897F0068DFD8 /* AR_DataTransfromer */,
+				B6D18EEA18BD897F0068DFD8 /* Frameworks */,
+				B6D18EE818BD897F0068DFD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D18EE818BD897F0068DFD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D18EE718BD897F0068DFD8 /* AR_DataTransfromer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D18EEA18BD897F0068DFD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6D18EEB18BD897F0068DFD8 /* UIKit.framework */,
+				B6D18EED18BD897F0068DFD8 /* Foundation.framework */,
+				B6D18EEF18BD897F0068DFD8 /* CoreGraphics.framework */,
+				B6D18EF118BD897F0068DFD8 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6D18EF318BD897F0068DFD8 /* AR_DataTransfromer */ = {
+			isa = PBXGroup;
+			children = (
+				B6D18EFC18BD897F0068DFD8 /* AppDelegate.h */,
+				B6D18EFD18BD897F0068DFD8 /* AppDelegate.m */,
+				B6D18F0518BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodeld */,
+				B6D18EF418BD897F0068DFD8 /* Supporting Files */,
+			);
+			path = AR_DataTransfromer;
+			sourceTree = "<group>";
+		};
+		B6D18EF418BD897F0068DFD8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D18EF518BD897F0068DFD8 /* AR_DataTransfromer-Info.plist */,
+				B6D18EF618BD897F0068DFD8 /* InfoPlist.strings */,
+				B6D18EF918BD897F0068DFD8 /* main.m */,
+				B6D18EFB18BD897F0068DFD8 /* AR_DataTransfromer-Prefix.pch */,
+				B6D18EFF18BD897F0068DFD8 /* Default.png */,
+				B6D18F0118BD897F0068DFD8 /* Default@2x.png */,
+				B6D18F0318BD897F0068DFD8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D18EE618BD897F0068DFD8 /* AR_DataTransfromer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D18F0A18BD897F0068DFD8 /* Build configuration list for PBXNativeTarget "AR_DataTransfromer" */;
+			buildPhases = (
+				B6D18EE318BD897F0068DFD8 /* Sources */,
+				B6D18EE418BD897F0068DFD8 /* Frameworks */,
+				B6D18EE518BD897F0068DFD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AR_DataTransfromer;
+			productName = AR_DataTransfromer;
+			productReference = B6D18EE718BD897F0068DFD8 /* AR_DataTransfromer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D18EDE18BD897F0068DFD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = xiaofu;
+			};
+			buildConfigurationList = B6D18EE118BD897F0068DFD8 /* Build configuration list for PBXProject "AR_DataTransfromer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6D18EDC18BD897F0068DFD8;
+			productRefGroup = B6D18EE818BD897F0068DFD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D18EE618BD897F0068DFD8 /* AR_DataTransfromer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D18EE518BD897F0068DFD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D18EF818BD897F0068DFD8 /* InfoPlist.strings in Resources */,
+				B6D18F0018BD897F0068DFD8 /* Default.png in Resources */,
+				B6D18F0218BD897F0068DFD8 /* Default@2x.png in Resources */,
+				B61A52E918BD9CDB0065A43A /* IndoorMap_Building.sqlite in Resources */,
+				B6D18F0418BD897F0068DFD8 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D18EE318BD897F0068DFD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61A52D518BD8A070065A43A /* yajl.c in Sources */,
+				B61A52DC18BD8A070065A43A /* NSObject+YAJL.m in Sources */,
+				B6D18EFA18BD897F0068DFD8 /* main.m in Sources */,
+				B6D18EFE18BD897F0068DFD8 /* AppDelegate.m in Sources */,
+				B61A52E018BD8A070065A43A /* YAJLParser.m in Sources */,
+				B61A52E418BD8A980065A43A /* ARTransferDAO.m in Sources */,
+				B61A52DA18BD8A070065A43A /* yajl_lex.c in Sources */,
+				B61A52D818BD8A070065A43A /* yajl_encode.c in Sources */,
+				B61A52DD18BD8A070065A43A /* YAJL_GTMBase64.m in Sources */,
+				B6D18F0718BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodeld in Sources */,
+				B61A52D418BD8A070065A43A /* sqlite3.c in Sources */,
+				B61A52DB18BD8A070065A43A /* yajl_parser.c in Sources */,
+				B61A52E718BD8B480065A43A /* ARData.m in Sources */,
+				B61A52D618BD8A070065A43A /* yajl_alloc.c in Sources */,
+				B61A52DF18BD8A070065A43A /* YAJLGen.m in Sources */,
+				B61A52D918BD8A070065A43A /* yajl_gen.c in Sources */,
+				B61A52DE18BD8A070065A43A /* YAJLDocument.m in Sources */,
+				B61A52D718BD8A070065A43A /* yajl_buf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6D18EF618BD897F0068DFD8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D18EF718BD897F0068DFD8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D18F0818BD897F0068DFD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6D18F0918BD897F0068DFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D18F0B18BD897F0068DFD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AR_DataTransfromer/AR_DataTransfromer-Prefix.pch";
+				INFOPLIST_FILE = "AR_DataTransfromer/AR_DataTransfromer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6D18F0C18BD897F0068DFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AR_DataTransfromer/AR_DataTransfromer-Prefix.pch";
+				INFOPLIST_FILE = "AR_DataTransfromer/AR_DataTransfromer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D18EE118BD897F0068DFD8 /* Build configuration list for PBXProject "AR_DataTransfromer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D18F0818BD897F0068DFD8 /* Debug */,
+				B6D18F0918BD897F0068DFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D18F0A18BD897F0068DFD8 /* Build configuration list for PBXNativeTarget "AR_DataTransfromer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D18F0B18BD897F0068DFD8 /* Debug */,
+				B6D18F0C18BD897F0068DFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6D18F0518BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6D18F0618BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodel */,
+			);
+			currentVersion = B6D18F0618BD897F0068DFD8 /* AR_DataTransfromer.xcdatamodel */;
+			path = AR_DataTransfromer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B6D18EDE18BD897F0068DFD8 /* Project object */;
+}

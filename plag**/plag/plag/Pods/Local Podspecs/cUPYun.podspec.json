@@ -1,0 +1,21 @@
+{
+  "name": "cUPYun",
+  "version": "0.0.1",
+  "summary": "A short description of cUPYun.",
+  "description": "                   A short description of cUPYun.\n",
+  "homepage": "https://github.com/Valar-Morghulis/cUPYun",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/cUPYun.git"
+  },
+  "source_files": "cUPYun/*.{h,m,c}",
+  "public_header_files": "cUPYun/*.h",
+  "requires_arc": false
+}

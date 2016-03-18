@@ -1,0 +1,21 @@
+{
+  "name": "ZCAddressBook",
+  "version": "0.0.1",
+  "summary": "A short description of ZCAddressBook.",
+  "description": "                   A short description of ZCAddressBook.\n",
+  "homepage": "https://github.com/Valar-Morghulis/ZCAddressBook",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/ZCAddressBook.git"
+  },
+  "source_files": "ZCAddressBook/*.{h,m,c}",
+  "public_header_files": "ZCAddressBook/*.h",
+  "requires_arc": false
+}

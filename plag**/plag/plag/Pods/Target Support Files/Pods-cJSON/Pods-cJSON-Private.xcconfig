@@ -1,0 +1,6 @@
+#include "Pods-cJSON.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/cJSON" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ASIHTTPRequest" "${PODS_ROOT}/Headers/Public/BaiduMapAPI" "${PODS_ROOT}/Headers/Public/DES" "${PODS_ROOT}/Headers/Public/GTM" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/MLNavigationController" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/RegexKitLite" "${PODS_ROOT}/Headers/Public/UIView-Image" "${PODS_ROOT}/Headers/Public/ZCAddressBook" "${PODS_ROOT}/Headers/Public/cJSON" "${PODS_ROOT}/Headers/Public/cUPYun" "${PODS_ROOT}/Headers/Public/iOSWeChatSdk" "${PODS_ROOT}/Headers/Public/iOScURL" "${PODS_ROOT}/Headers/Public/sqlite3" "${PODS_ROOT}/Headers/Public/yajl" "${PODS_ROOT}/Headers/Public/yajl-objc"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

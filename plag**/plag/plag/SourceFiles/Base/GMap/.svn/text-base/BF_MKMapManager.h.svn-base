@@ -1,0 +1,20 @@
+//
+//  BF_MKMapManager.h
+//  HK3_BMap
+//
+//  Created by MaYing on 13-7-29.
+//  Copyright (c) 2013年 MaYing. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@protocol BF_MKMapManagerDelegate
+
+
+@end
+
+@interface BF_MKMapManager : NSObject
+
+-(BOOL)start:(NSString*)key generalDelegate:(id<BF_MKMapManagerDelegate>)delegate;
+-(BOOL)stop;
+@end

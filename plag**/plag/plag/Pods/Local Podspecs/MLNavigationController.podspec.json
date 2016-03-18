@@ -1,0 +1,21 @@
+{
+  "name": "MLNavigationController",
+  "version": "0.0.1",
+  "summary": "A short description of MLNavigationController.",
+  "description": "                   A short description of MLNavigationController.\n",
+  "homepage": "https://github.com/Valar-Morghulis/MLNavigationController",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/MLNavigationController.git"
+  },
+  "source_files": "MLNavigationController/*.{h,m}",
+  "public_header_files": "MLNavigationController/*.h",
+  "requires_arc": false
+}

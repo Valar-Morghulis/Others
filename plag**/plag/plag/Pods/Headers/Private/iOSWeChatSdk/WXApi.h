@@ -1,0 +1,1 @@
+../../../iOSWeChatSdk/sdk/WeChatSDK_1.5_OnlyIphone/WXApi.h

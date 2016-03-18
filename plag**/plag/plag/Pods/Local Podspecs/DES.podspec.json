@@ -1,0 +1,21 @@
+{
+  "name": "DES",
+  "version": "0.0.1",
+  "summary": "A short description of DES.",
+  "description": "                   A short description of DES.\n",
+  "homepage": "https://github.com/Valar-Morghulis/DES",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/DES.git"
+  },
+  "source_files": "DES/*.{h,m}",
+  "public_header_files": "DES/*.h",
+  "requires_arc": false
+}

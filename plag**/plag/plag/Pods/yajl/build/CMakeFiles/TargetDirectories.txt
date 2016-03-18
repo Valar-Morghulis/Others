@@ -1,0 +1,7 @@
+/Users/ft2799483/Library/Caches/CocoaPods/Pods/Release/yajl/1.0.12-e435f/build/CMakeFiles/doc.dir
+/Users/ft2799483/Library/Caches/CocoaPods/Pods/Release/yajl/1.0.12-e435f/build/reformatter/CMakeFiles/json_reformat.dir
+/Users/ft2799483/Library/Caches/CocoaPods/Pods/Release/yajl/1.0.12-e435f/build/verify/CMakeFiles/json_verify.dir
+/Users/ft2799483/Library/Caches/CocoaPods/Pods/Release/yajl/1.0.12-e435f/build/CMakeFiles/test.dir
+/Users/ft2799483/Library/Caches/CocoaPods/Pods/Release/yajl/1.0.12-e435f/build/src/CMakeFiles/yajl.dir
+/Users/ft2799483/Library/Caches/CocoaPods/Pods/Release/yajl/1.0.12-e435f/build/src/CMakeFiles/yajl_s.dir
+/Users/ft2799483/Library/Caches/CocoaPods/Pods/Release/yajl/1.0.12-e435f/build/test/CMakeFiles/yajl_test.dir

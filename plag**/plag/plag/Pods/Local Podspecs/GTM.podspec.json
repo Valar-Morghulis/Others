@@ -1,0 +1,21 @@
+{
+  "name": "GTM",
+  "version": "0.0.1",
+  "summary": "A short description of GTM.",
+  "description": "                   A short description of GTM.\n",
+  "homepage": "https://github.com/Valar-Morghulis/GTM",
+  "license": {
+    "type": "GNU",
+    "text": "Copyright (C) 1989, 1991 Free Software Foundation, Inc."
+  },
+  "authors": "Valar-Morghulis",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/Valar-Morghulis/GTM.git"
+  },
+  "source_files": "GTM/*.{h,m}",
+  "public_header_files": "GTM/*.h",
+  "requires_arc": false
+}
